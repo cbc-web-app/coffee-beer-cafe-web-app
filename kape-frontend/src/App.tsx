@@ -1,13 +1,8 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
-import HomePage from "./pages/customer/HomePage";
 import LoginPage from "./pages/admin/LoginPage";
 import ProductsPage from "./pages/admin/ProductsPage";
 import StorePage from "./pages/admin/StorePage";
 import PromoPage from "./pages/admin/PromoPage";
-import MenuPage from "./pages/customer/MenuPage";
-import PromotionPage from "./pages/customer/PromotionPage";
-import Storesapge from "./pages/customer/Storesapge";
-import SamplePage from "./pages/customer/SamplePage";
 import CategoriesPage from "./pages/admin/CategoryPage";
 import OwnerPage from "./pages/admin/OwnerPage";
 import OwnerDashboardPage from "./pages/owner/OwnerDashboardPage";
@@ -27,11 +22,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 {/* Redirect from / to /home */}
-                <Route path="/" element={<Navigate to="/home" />} />
-
-                {/* Other routes */}
-                <Route element={<HomePage />} path="/home" />
-                <Route element={<MenuPage />} path="/menu" />
+                <Route path="/" element={<Navigate to="/admin/login" />} />
 
                 {/* Owner Pages */}
                 <Route element={<OwnerCategoriesPage />} path="/categories-owner" />
@@ -54,9 +45,6 @@ function App() {
                 <Route element={<StorePage />} path="/stores" />
                 <Route element={<LoginPage />} path="/admin/login" />
                 <Route element={<PromoPage />} path="/promos" />
-                <Route element={<PromotionPage />} path="/promotions" />
-                <Route element={<Storesapge />} path="/store-locations" />
-                <Route element={<SamplePage />} path="/sample-page" />
                 <Route element={<CategoriesPage />} path="/categories" />
                 <Route element={<OwnerPage />} path="/owners" />
             </Routes>

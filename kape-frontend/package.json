@@ -18,7 +18,7 @@
         "@tanstack/react-table": "^8.20.5",
         "bootstrap": "^5.3.3",
         "chart.js": "^4.4.6",
-        "daisyui": "^4.12.14",
+        "daisyui": "^4.12.23",
         "dotenv": "^16.4.5",
         "flowbite-react": "^0.10.2",
         "groq-sdk": "^0.7.0",
